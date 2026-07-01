@@ -6,3 +6,5 @@
 vim.g.lazyvim_python_lsp = "pyright"
 -- Set to "ruff_lsp" to use the old LSP implementation version.
 vim.g.lazyvim_python_ruff = "ruff"
+-- Set line length to 120
+vim.opt.textwidth = 120

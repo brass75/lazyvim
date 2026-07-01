@@ -1,0 +1,13 @@
+{
+  "MD013": {
+    "line_length": 120,
+    "tables": false,
+    "code_blocks": false
+  },
+  "MD041": false,
+  "MD054": {
+    "inline": true,
+    "url_inline": false,
+    "collapsed": false
+  }
+}
