@@ -1,2 +1,15 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
-require("config.lazy")({ "projekt0n/github-nvim-theme", name = "github_dark_high_contrast" })
+require("config.lazy")({ "projekt0n/github-nvim-theme", name = "github_dark_high_contrast" })(
+{
+  "projekt0n/github-nvim-theme",
+  name = "github_dark_high_contrast",
+  lazy = false, -- make sure we load this during startup if it is your main colorscheme
+  priority = 1000, -- make sure to load this before all the other start plugins
+  config = function()
+    require("github_dark_high_contrast").setup({
+      -- ...
+    })
+
+    vim.cmd("colorscheme github_dark_high_contrast")
+  end,
+})
