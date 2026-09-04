@@ -8,3 +8,5 @@ vim.g.lazyvim_python_lsp = "basedpyright"
 vim.g.lazyvim_python_ruff = "ruff"
 -- Set line length to 120
 vim.opt.textwidth = 120
+-- Set absolute numbers
+vim.opt.relativenumber = false
